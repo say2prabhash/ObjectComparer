@@ -21,7 +21,7 @@ namespace ObjectComparerTest
         public void Object_Not_Null_Reference_Test_Method()
         {
             Person p = new Person("Prabhash");
-            Person p1 = new Person();
+            Person p1 = new Person("");
             ObjectComparision compare = new ObjectComparision();
             Assert.False(compare.Comparer(p, p1));
         }
