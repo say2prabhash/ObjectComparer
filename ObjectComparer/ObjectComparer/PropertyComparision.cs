@@ -42,11 +42,10 @@ namespace ObjectComparer
                 }
                 else
                 {
-                    //if (PropertyComparer(obj1[k].PropertyType, obj2[k].PropertyType,))
-                    //{
-                    //    length++;
-                    //}
-                    length++;
+                    if (PropertyComparer(obj1[k].PropertyType, obj2[k].PropertyType,obj1[k].GetValue(o1),obj2[k].GetValue(o2)))
+                    {
+                        length++;
+                    }
                 }
                 k++;
             }
