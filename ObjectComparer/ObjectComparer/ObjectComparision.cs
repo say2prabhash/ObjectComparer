@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ObjectComparer
 {
-    public class ObjectComparision
+    public class ObjectComparision:IComparer
     {
         public bool Comparer(object o1, object o2)
         {
